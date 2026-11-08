@@ -220,6 +220,24 @@ h1.hero-name{
   color:var(--dim);
 }
 
+.tool-links{
+  display:flex;
+  gap:18px;
+  margin-top:16px;
+  font-size:10px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+}
+.tool-links a{
+  color:var(--white);
+  text-decoration:none;
+  border-bottom:1px solid var(--faint);
+  padding-bottom:2px;
+  transition:border-color 0.2s;
+}
+.tool-links a:hover{border-color:var(--white)}
+.tool-links a.src{color:var(--dim)}
+
 /* ─── STATS ─────────────────────────── */
 .stats-row{
   display:grid;
@@ -410,6 +428,7 @@ footer{
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
+    <li><a href="#tools">Tools</a></li>
     <li><a href="#background">Background</a></li>
     <li><a href="#approach">Approach</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -471,10 +490,58 @@ footer{
   </div>
 </div>
 
+<!-- TOOLS ────────────────────────────── -->
+<div class="section-wrap" id="tools">
+  <div class="container">
+    <span class="section-eyebrow reveal">02 &nbsp;/&nbsp; Tools</span>
+    <div class="services-layout">
+      <h2 class="services-heading reveal">Calculators I&nbsp;built</h2>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <span class="svc-num">01</span>
+          <span class="svc-title">Ristikko &middot; Truss &amp; Rafter Analysis</span>
+          <p class="svc-desc">2D timber truss and rafter analysis with a direct-stiffness solver. Ten truss types, snow and wind load combinations, Eurocode 5 member checks and a printable calculation report.</p>
+          <div class="tool-links"><a href="https://madebyfranz.github.io/Ristikko/">Open tool →</a><a class="src" href="https://github.com/MadeByFranz/Ristikko">Source</a></div>
+        </div>
+        <div class="service-card">
+          <span class="svc-num">02</span>
+          <span class="svc-title">Stair Designer</span>
+          <p class="svc-desc">Quarter-turn timber stair with winders. Live plan, elevation and 3D, Finnish rules check (YMa 1007/2017), and export of A3 drawings, 1:1 templates, DXF and cut list.</p>
+          <div class="tool-links"><a href="https://madebyfranz.github.io/stair-designer/">Open tool →</a><a class="src" href="https://github.com/MadeByFranz/stair-designer">Source</a></div>
+        </div>
+        <div class="service-card">
+          <span class="svc-num">03</span>
+          <span class="svc-title">L-Stair Designer</span>
+          <p class="svc-desc">Quarter-turn stair with a square landing. Plan and elevation drawings, 3D model, Finnish rules check and cut list from a few opening dimensions.</p>
+          <div class="tool-links"><a href="https://madebyfranz.github.io/l-stair-designer/">Open tool →</a><a class="src" href="https://github.com/MadeByFranz/l-stair-designer">Source</a></div>
+        </div>
+        <div class="service-card">
+          <span class="svc-num">04</span>
+          <span class="svc-title">BlockCalc &middot; Masonry &amp; Footings</span>
+          <p class="svc-desc">Lightweight-block (valuharkko) calculator: blocks, fill concrete, rebar, per-course cut lists, stepped foundations and footings. FI / SV / EN, shareable project links.</p>
+          <div class="tool-links"><a href="https://madebyfranz.github.io/blockcalc/">Open tool →</a><a class="src" href="https://github.com/MadeByFranz/blockcalc">Source</a></div>
+        </div>
+        <div class="service-card">
+          <span class="svc-num">05</span>
+          <span class="svc-title">Rafter Load Visualiser</span>
+          <p class="svc-desc">Interactive rafter load calculator with live force paths and Eurocode 5 checks for shed and gable roofs.</p>
+          <div class="tool-links"><a href="https://madebyfranz.github.io/rafter-load-visualiser/">Open tool →</a><a class="src" href="https://github.com/MadeByFranz/rafter-load-visualiser">Source</a></div>
+        </div>
+        <div class="service-card">
+          <span class="svc-num">06</span>
+          <span class="svc-title">Panelr &middot; Stagger Layouts</span>
+          <p class="svc-desc">Free stagger layout generator for flooring, tiles, bricks and panels.</p>
+          <div class="tool-links"><a href="https://panelr.io/">Open tool →</a><a class="src" href="https://github.com/MadeByFranz/PanelrFree">Source</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- BACKGROUND ─────────────────────── -->
 <div class="section-wrap alt" id="background">
   <div class="container">
-    <span class="section-eyebrow reveal">02 &nbsp;/&nbsp; Background</span>
+    <span class="section-eyebrow reveal">03 &nbsp;/&nbsp; Background</span>
     <div class="stats-row reveal">
       <div class="stat-cell">
         <span class="stat-big">15</span>
@@ -495,7 +562,7 @@ footer{
 <!-- APPROACH ─────────────────────────── -->
 <div class="section-wrap" id="approach">
   <div class="container">
-    <span class="section-eyebrow reveal">03 &nbsp;/&nbsp; Approach</span>
+    <span class="section-eyebrow reveal">04 &nbsp;/&nbsp; Approach</span>
     <div class="approach-layout">
       <h2 class="approach-label reveal">Why the combination matters</h2>
       <div class="reveal">
@@ -532,7 +599,7 @@ footer{
 
 <!-- CONTACT ─────────────────────────── -->
 <section id="contact">
-  <span class="contact-pre reveal">04 &nbsp;/&nbsp; Contact</span>
+  <span class="contact-pre reveal">05 &nbsp;/&nbsp; Contact</span>
   <h2 class="contact-heading reveal">Get in touch</h2>
   <a href="mailto:franzsnickeri@gmail.com" class="contact-email reveal">franzsnickeri@gmail.com</a>
   <p class="contact-meta reveal">
